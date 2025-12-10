@@ -1,0 +1,11 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Milk",
+      "stock": 100,
+      "price": "40.00"
+    }
+  }
+]
