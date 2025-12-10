@@ -1,10 +1,9 @@
-from rest_framework_simplejwt.views import TokenObtainPairView
-from rest_framework import generics, permissions
-from .serializers import MyTokenObtainPairSerializer, RegisterSerializer
+from django.urls import path
+from .views import RegisterView, MyTokenObtainPairView
+from rest_framework_simplejwt.views import TokenRefreshView
 
-class MyTokenObtainPairView(TokenObtainPairView):
-    serializer_class = MyTokenObtainPairSerializer
-
-class RegisterView(generics.CreateAPIView):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = RegisterSerializer
+urlpatterns = [
+    path("register/", RegisterView.as_view(), name="register"),
+    path("token/", MyTokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+]
