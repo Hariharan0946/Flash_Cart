@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Envs
+.env
+.env.* 
+venv/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+*.log
+*.env
+
+# Static
+staticfiles/
+media/
