@@ -29,28 +29,7 @@ No frontend is required — all features work via APIs.
 ---
 
 ## 🧱 Project Structure
-Flash_Cart/
-│
-├── flashcart/ # Main Django project (settings, urls, asgi)
-├── users/ # User authentication & JWT logic
-├── products/ # Product and inventory management
-├── orders/ # Order creation and order workflow
-├── tracking/ # WebSocket logic for real-time tracking
-│
-├── scripts/ # Helper shell scripts
-├── tests/ # Basic test cases
-├── fixtures/ # Sample data
-├── logs/ # Log files
-│
-├── Dockerfile
-├── docker-compose.yml
-├── entrypoint.sh
-├── Makefile
-├── VERSION
-├── requirements.txt
-├── .env.example
-└── README.md
----
+
 
 ## 🔐 Authentication (users app)
 
