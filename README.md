@@ -133,8 +133,7 @@ Services include:
 Run locally using:
 docker-compose up --build
 
-yaml
-Copy code
+
 
 ---
 
